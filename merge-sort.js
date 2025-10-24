@@ -24,4 +24,5 @@ function mergeSort(array) {
   }
 }
 
-console.log(mergeSort([1, 122, 4, 5, 8, 56, 3, 0, 9, 203, 4, -36, -2, 7]));
+
+console.log(`Merge sort: ${mergeSort([1, 122, 4, 5, 8, 56, 3, 0, 9, 203, 4, -36, -2, 7])}`);

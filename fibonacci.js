@@ -12,7 +12,7 @@ function fibs(seq) {
   }
 }
 
-//console.log(fibs(12));
+console.log(`Fibonnaci iterative: ${fibsrec(12)}`);
 
 function fibsrec(seq) {
   //console.log("This was printed recursively: " + seq);
@@ -25,10 +25,10 @@ function fibsrec(seq) {
   //recurively calls down the stack until return base case of [0, 1]
   const array = fibsrec(seq - 1);
   //resumes stack and pushes the new sequence number
-  console.log(`resume stack ${seq}, array [${array}], push ${array[array.length - 1] + array[array.length - 2]}`);
+  //console.log(`resume stack ${seq}, array [${array}], push ${array[array.length - 1] + array[array.length - 2]}`);
   array.push(array[array.length - 1] + array[array.length - 2]);
   //returns the modified array to the next resumed stack
   return array;
 }
 
-//console.log(fibsrec(12));
+console.log(`Fibonnaci recursive: ${fibsrec(12)}`);
