@@ -12,7 +12,7 @@ function fibs(seq) {
   }
 }
 
-console.log(fibs(12));
+//console.log(fibs(12));
 
 function fibsrec(seq) {
   //console.log("This was printed recursively: " + seq);
@@ -31,4 +31,4 @@ function fibsrec(seq) {
   return array;
 }
 
-console.log(fibsrec(12));
+//console.log(fibsrec(12));
