@@ -22,9 +22,12 @@ function fibsrec(seq) {
     return [0, 1];
   }
 
+  //recurively calls down the stack until return base case of [0, 1]
   const array = fibsrec(seq - 1);
-  //console.log(seq + ": " + array);
+  //resumes stack and pushes the new sequence number
+  console.log(`resume stack ${seq}, array [${array}], push ${array[array.length - 1] + array[array.length - 2]}`);
   array.push(array[array.length - 1] + array[array.length - 2]);
+  //returns the modified array to the next resumed stack
   return array;
 }
 
